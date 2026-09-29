@@ -1,0 +1,57 @@
+# =============================================================================
+# Git Ignore - Hermes Laptop Appliance
+# =============================================================================
+
+# Credentials, secrets, and environment tokens (NEVER COMMIT)
+.env
+.env.*
+*.env
+!.env.example
+auth.json
+auth.lock
+.install_id*
+install_id
+
+# Databases & Runtime State
+*.db
+*.db-shm
+*.db-wal
+*.lock
+*.pid
+*.log
+gateway_state.json
+channel_directory.json
+spawn-ledger.json
+telegram_update_receipts_*.json
+models_dev_cache.*
+provider_models_cache.*
+tui-theme-boot.json
+.skills_prompt_snapshot.json
+
+# User conversations, memories & sessions
+sessions/
+memories/
+sandboxes/
+audio_cache/
+image_cache/
+pairing/
+pending_messages/
+
+# Node / Python build artifacts & caches
+__pycache__/
+*.pyc
+*.pyo
+node_modules/
+dist/
+release/
+cache/
+installs/
+tools/
+runtime/
+*.exe
+*.dll
+
+# OS-specific files
+Thumbs.db
+Desktop.ini
+.DS_Store
